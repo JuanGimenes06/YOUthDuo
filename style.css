@@ -4,71 +4,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-button{
-    background-color: var(--DeepBlue);
-    color: white;
-    height: 38px;
-    width: 100px;
-    border-radius: 10%;
-    font-family: 'textoBom', sans-serif;
-    margin-top: 15px;
-    
-}
-.caixaRemedio{
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px;
-    
-}
-.remedios{
-    display: flex;
-    margin-top: 15px;
-}
-.caixa{
-    font-size: 26px;
-    display:flex ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 40px;
-}
-.linhaBranca2{
-    height: 1px;
-    background-color: white;
-    width: 50%;
-    margin-top: 15px;
-   
-}
-.bola{
-    height: 26px;
-    width: auto;   
-}
-.produtos{
-    background-color: var(--DeepLightBlue);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.lista{
-    background-color: var(--DeepLightBlue);
-    color: white;
-    display:flex ;
-    justify-content: center;
-    align-items: center;
-}
 
-h1, p, a {
-    font-family:'textoBom',sans-serif;
+h1,
+p,
+a,
+h2 {
+    font-family: 'textoBom', sans-serif;
 }
 
 @font-face {
     font-family: "textoBom";
     src: url(font/Imprima-Regular.ttf);
 }
+
 a {
     text-decoration: none;
+    
 }
 
 img {
@@ -91,6 +42,10 @@ html {
     --black: #000000;
     --Yellow: #FFCC00;
     --SemiBlack: rgb(0, 0, 0, 0.5)
+}
+
+.tituloBranco {
+    color: var(--White);
 }
 
 /* Header */
@@ -140,6 +95,7 @@ html {
 }
 
 .caixaBanner {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -213,11 +169,207 @@ html {
 }
 
 /* Fim Review */
+/* processo */
+
+.botaoCompra,
+.botaoProduto {
+    background-color: var(--DeepBlue);
+    color: white;
+    height: 38px;
+    width: 150px;
+    border-radius: 10%;
+    font-family: 'textoBom', sans-serif;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+.botaoCompra:not(:hover),
+.botaoProduto:not(:hover) {
+    transition: 0.7s;
+}
+
+.botaoCompra:hover,
+.botaoProduto:hover {
+    transition: 0.6s;
+    opacity: 0.83;
+}
+
+.botaoProduto{
+    display: none;
+}
+
+.linhaBrancaH {
+    height: 1px;
+    background-color: white;
+    width: 80%;
+    margin: 90px 0 50px;
+}
+
+.itemCompra {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagemCompra {
+    width: 100%;
+}
+
+.produtos {
+    background-color: var(--MiddleBlue);
+    color: white;
+    display: flex;
+}
+
+.caixaProdutos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 200px;
+}
+
+.textoLista {
+    font-size: 19px;
+}
+
+.caixaLista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.itemLista {
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+
+.check {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.listaCompra {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 120%;
+}
+
+.compraProdutos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tituloProdutos {
+    margin: 20px 0;
+}
+
+
+
+/* Fim processo */
+/* Info */
+
+.informacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+
+}
+
+
+.caixaInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 55px 0;
+}
+
+.caixaTextoInfo {
+    width: 50%;
+    padding-right: 75px;
+}
+
+.imgInfo {
+    padding-left: 50px;
+}
+
+.linhaAzul {
+    background-color: var(--MiddleBlue);
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fim Info */
+/* Video */
+
+.videoCaixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.linhaAzulEscuro {
+    background-color: var(--DeepBlue);
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    width: 640px;
+    margin: 150px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+iframe {
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    border: none;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Fim Video */
 
 .linha {
-    background-color: var(--MiddleLightBlue);
-    width: 100vw;
-    height: 30px;
+    background-color: var(--MiddleBlue);
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
 }
 
 .processos {
@@ -229,12 +381,20 @@ html {
 
 
 /* footer */
-#face, #insta, #link,#tt,#yt{
+#face,
+#insta,
+#link,
+#tt,
+#yt {
     font-size: 26px;
+    color: var(--White);
 }
+
 #footer {
-    background-color: var(--DeepLightBlue);
+    background-color: var(--DeepBlue);
     color: white;
+    width: 100%;
+    height: 1050%;
 
 }
 
@@ -246,13 +406,13 @@ html {
 }
 
 #autora {
-    
+
     height: 80px;
     display: flex;
 }
 
 #autora2 {
-    margin-left: 20px;
+    margin-left: 40px;
     padding-top: 20px;
 }
 
@@ -275,11 +435,11 @@ html {
 }
 
 .titulo {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .desc {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .menu {
